@@ -1,0 +1,22 @@
+[2026-06-08 13:56:34] ERROR error: new row for relation "payments" violates check constraint "payments_payment_method_check"
+    at C:\Projects\adisyon sistemi\backend\node_modules\pg\lib\client.js:631:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async partialCheckout (C:\Projects\adisyon sistemi\backend\src\controllers\order.controller.js:647:9) {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/101/partial-checkout","statusCode":500}
+[2026-06-08 13:57:39] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ITEM_CANCELLED","payloadPreview":""}
+[2026-06-08 13:57:49] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #102\n\n6x Adaçayı"}
+[2026-06-08 14:01:42] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #102\n\n4x Adaçayı\n\nARA TOPLAM: 640.00 TL\nISKONTO: 0.00 TL\nKDV: 58.18 TL\nTOPLAM: 640.00 TL\nODEME: CASH"}

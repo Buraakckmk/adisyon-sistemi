@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "checkJs": false,
+    "allowJs": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "ignoreDeprecations": "6.0"
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+    "frontend/build",
+    "frontend/.dart_tool",
+    "frontend/.idea"
+  ]
+}

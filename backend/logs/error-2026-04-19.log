@@ -1,0 +1,10 @@
+[2026-04-19 13:23:45] ERROR error: column z.total_expense does not exist
+    at C:\Projects\adisyon sistemi\backend\node_modules\pg\lib\client.js:631:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async getDailyHistory (C:\Projects\adisyon sistemi\backend\src\controllers\admin.controller.js:431:24) {"service":"adisyon-backend"}
+[2026-04-19 13:24:06] ERROR ReferenceError: businessDate is not defined
+    at generateZReport (C:\Projects\adisyon sistemi\backend\src\controllers\admin.controller.js:711:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {"service":"adisyon-backend"}
+[2026-04-19 13:25:02] ERROR ReferenceError: businessDate is not defined
+    at generateZReport (C:\Projects\adisyon sistemi\backend\src\controllers\admin.controller.js:711:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5) {"service":"adisyon-backend"}

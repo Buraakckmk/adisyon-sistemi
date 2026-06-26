@@ -1,0 +1,30 @@
+[2026-04-23 20:30:42] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #73\n\n6x Çay"}
+[2026-04-23 20:30:52] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 9\nGARSON: ADMIN KULLANICI\nSIPARIS: #74\n\n5x Çay"}
+[2026-04-23 20:31:02] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: OYUN SALONU 7\nGARSON: ADMIN KULLANICI\nSIPARIS: #75\n\n1x Çilek Milkshakes\n1x Muz Milkshakes\n1x Limon Milkshakes"}
+[2026-04-23 20:31:13] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: VIP 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #76\n\n5x Amsterdam\n5x Ice Cola"}
+[2026-04-23 20:31:23] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: SALON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #77\n\n4x Americano"}
