@@ -1,0 +1,5 @@
+[2026-07-12 02:12:30] INFO Backend listening on http://0.0.0.0:3002 (Yerel ağda erişilebilir) {"service":"adisyon-backend"}
+[2026-07-12 02:12:30] INFO Sunucu: 12.07.2026 02:12:30 {"service":"adisyon-backend"}
+[2026-07-12 02:12:31] INFO PostgreSQL connection established. database=adisyon_db {"service":"adisyon-backend"}
+[2026-07-12 02:12:31] INFO menu-migration: completed {"service":"adisyon-backend"}
+[2026-07-12 02:12:31] INFO Database schemas ensured on startup. {"service":"adisyon-backend"}

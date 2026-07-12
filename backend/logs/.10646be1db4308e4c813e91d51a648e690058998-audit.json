@@ -6,14 +6,9 @@
     "auditLog": "C:\\Projects\\adisyon sistemi\\backend\\logs\\.10646be1db4308e4c813e91d51a648e690058998-audit.json",
     "files": [
         {
-            "date": 1778521102250,
-            "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\app-2026-05-11.log",
-            "hash": "86f9ab1fd3819a8ed4124dd8199f5e7c0fab66ca5e3270912a185949b2c30a3b"
-        },
-        {
-            "date": 1780916126297,
-            "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\app-2026-06-08.log",
-            "hash": "97e47f8bbc21aa6c3347d2a33c3a32ef8538003073444f9ded8ee760fc1efacb"
+            "date": 1783811550160,
+            "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\app-2026-07-12.log",
+            "hash": "fc8f343b17038851654f5eaaf5b2b6b5f63f7b49e73d733526fa395641e116b2"
         }
     ],
     "hashType": "sha256"
