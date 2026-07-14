@@ -3,3 +3,541 @@
 [2026-07-12 02:12:31] INFO PostgreSQL connection established. database=adisyon_db {"service":"adisyon-backend"}
 [2026-07-12 02:12:31] INFO menu-migration: completed {"service":"adisyon-backend"}
 [2026-07-12 02:12:31] INFO Database schemas ensured on startup. {"service":"adisyon-backend"}
+[2026-07-12 02:12:55] INFO Socket connected: E3JpWamMw8XmP7nJAAAB {"service":"adisyon-backend"}
+[2026-07-12 02:12:59] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/login/pin","statusCode":200,"durationMs":9,"ip":"127.0.0.1","userId":null,"contentLength":"308"}
+[2026-07-12 02:12:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":28,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:12:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":31,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-12 02:13:00] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"469"}
+[2026-07-12 02:13:00] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":12,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:13:01] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/102/payment-session/start","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:13:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-12 02:13:14] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/102/amount-payment","statusCode":200,"durationMs":48,"ip":"127.0.0.1","userId":"3","contentLength":"120"}
+[2026-07-12 02:13:14] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/102/payment-session/end","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:13:14] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 02:13:14] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:13:14] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:13:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"107"}
+[2026-07-12 02:13:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 02:13:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:13:18] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:13:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"107"}
+[2026-07-12 02:13:24] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #102\n\n6x Adaçayı\n\nARA TOPLAM: 0.00 TL\nISKONTO: 0.00 TL\nKDV: 0.00 TL\nTOPLAM: 0.00 TL\nODEME: CASH"}
+[2026-07-12 02:13:24] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:13:24] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 02:13:31] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders","statusCode":201,"durationMs":29,"ip":"127.0.0.1","userId":"3","contentLength":"298"}
+[2026-07-12 02:13:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:13:31] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/confirm","statusCode":200,"durationMs":12,"ip":"127.0.0.1","userId":"3","contentLength":"251"}
+[2026-07-12 02:13:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:13:34] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/payment-session/start","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:13:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:13:41] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #103\n\n4x Adaçayı"}
+[2026-07-12 02:13:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:13:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:13:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:13:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:13:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:14:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:15:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:15:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:15:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:15:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:15:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:15:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:15:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:16:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:17:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:17:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:17:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:17:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:17:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:17:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:17:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:18:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:18:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:18:17] INFO Socket disconnected: E3JpWamMw8XmP7nJAAAB {"service":"adisyon-backend"}
+[2026-07-12 02:18:38] INFO Socket connected: 1kLHTPboyGFBhiVcAAAD {"service":"adisyon-backend"}
+[2026-07-12 02:18:42] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/login/pin","statusCode":401,"durationMs":4,"ip":"127.0.0.1","userId":null,"contentLength":"48"}
+[2026-07-12 02:18:51] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/login/pin","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":null,"contentLength":"308"}
+[2026-07-12 02:18:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:18:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":9,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:18:52] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":11,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:18:52] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":12,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:18:53] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/payment-session/start","statusCode":200,"durationMs":15,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:18:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:19:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:19:11] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/amount-payment","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"101"}
+[2026-07-12 02:19:11] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/payment-session/end","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:19:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"471"}
+[2026-07-12 02:19:12] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/payment-session/start","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:19:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:19:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:19:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:19:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"471"}
+[2026-07-12 02:19:20] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/payment-session/end","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:19:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:19:24] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:19:24] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:19:24] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"471"}
+[2026-07-12 02:19:26] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/payment-session/start","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:19:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:19:37] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/amount-payment","statusCode":200,"durationMs":22,"ip":"127.0.0.1","userId":"3","contentLength":"120"}
+[2026-07-12 02:19:37] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/103/payment-session/end","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:19:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 02:19:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:19:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:19:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:19:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:19:46] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:19:46] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 02:19:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"106"}
+[2026-07-12 02:19:47] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #103\n\n4x Adaçayı\n\nARA TOPLAM: 0.00 TL\nISKONTO: 0.00 TL\nKDV: 0.00 TL\nTOPLAM: 0.00 TL\nODEME: CASH"}
+[2026-07-12 02:19:51] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders","statusCode":201,"durationMs":10,"ip":"127.0.0.1","userId":"3","contentLength":"300"}
+[2026-07-12 02:19:51] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/confirm","statusCode":200,"durationMs":9,"ip":"127.0.0.1","userId":"3","contentLength":"251"}
+[2026-07-12 02:19:52] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/start","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:19:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:19:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"9243"}
+[2026-07-12 02:19:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:19:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"470"}
+[2026-07-12 02:20:01] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #104\n\n7x Adaçayı"}
+[2026-07-12 02:20:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:20:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:20:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:20:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:20:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:20:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"9243"}
+[2026-07-12 02:20:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:20:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"470"}
+[2026-07-12 02:20:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:20:47] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/end","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:20:49] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/start","statusCode":200,"durationMs":12,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:20:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:20:55] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/partial-checkout","statusCode":200,"durationMs":18,"ip":"127.0.0.1","userId":"3","contentLength":"149"}
+[2026-07-12 02:20:55] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/end","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:20:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"469"}
+[2026-07-12 02:20:57] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/start","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:20:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:21:03] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/partial-checkout","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"149"}
+[2026-07-12 02:21:03] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/end","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:21:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"469"}
+[2026-07-12 02:21:05] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/start","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:21:05] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #104\n\n5x Adaçayı\n\nARA TOPLAM: 800.00 TL\nISKONTO: 0.00 TL\nKDV: 72.73 TL\nTOPLAM: 800.00 TL\nODEME: CARD"}
+[2026-07-12 02:21:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:21:08] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/amount-payment","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"120"}
+[2026-07-12 02:21:08] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/104/payment-session/end","statusCode":200,"durationMs":1,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:21:08] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 02:21:08] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:21:08] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:21:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:21:15] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #104\n\n1x Adaçayı\n\nARA TOPLAM: 160.00 TL\nISKONTO: 0.00 TL\nKDV: 14.55 TL\nTOPLAM: 160.00 TL\nODEME: CASH"}
+[2026-07-12 02:21:20] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/verify-admin","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":null,"contentLength":"49"}
+[2026-07-12 02:21:20] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":11,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:21:20] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/daily-summary","statusCode":200,"durationMs":72,"ip":"127.0.0.1","userId":"3","contentLength":"213"}
+[2026-07-12 02:21:20] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/expenses?currentPeriodOnly=true","statusCode":200,"durationMs":109,"ip":"127.0.0.1","userId":"3","contentLength":"84"}
+[2026-07-12 02:21:20] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/paid-transactions","statusCode":200,"durationMs":108,"ip":"127.0.0.1","userId":"3","contentLength":"1173"}
+[2026-07-12 02:21:20] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/stats","statusCode":200,"durationMs":130,"ip":"127.0.0.1","userId":"3","contentLength":"516"}
+[2026-07-12 02:21:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:21:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/paid-transactions?page=1&limit=50&sortBy=paid_at&sortOrder=DESC","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"1173"}
+[2026-07-12 02:21:25] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #104\n\n7x Adaçayı\n\nARA TOPLAM: 0.00 TL\nISKONTO: 0.00 TL\nKDV: 0.00 TL\nTOPLAM: 0.00 TL\nODEME: CARD"}
+[2026-07-12 02:21:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/paid-transactions?page=1&limit=10&sortBy=paid_at&sortOrder=DESC","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"1173"}
+[2026-07-12 02:21:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:21:32] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/expenses?page=1&limit=50&sortBy=expense_date&sortOrder=DESC","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"287"}
+[2026-07-12 02:21:38] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/daily-history?startDate=2026-06-13&endDate=2026-07-12","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"2973"}
+[2026-07-12 02:21:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:21:46] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:21:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:21:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:21:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:22:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:23:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:23:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:23:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:23:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:23:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:23:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:23:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:24:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:25:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:25:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:25:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:25:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:25:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:25:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:25:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:26:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:27:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:27:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:27:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:27:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:27:34] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 02:27:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:27:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 02:27:39] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders","statusCode":201,"durationMs":15,"ip":"127.0.0.1","userId":"3","contentLength":"298"}
+[2026-07-12 02:27:39] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/confirm","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"251"}
+[2026-07-12 02:27:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:27:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:27:39] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/payment-session/start","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:27:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:27:48] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/payment-session/end","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 02:27:49] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #105\n\n2x Adaçayı"}
+[2026-07-12 02:27:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:04] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:28:04] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:28:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:28:10] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:28:10] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:28:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:28:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:28:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:28:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:28:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:35] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/verify-admin","statusCode":200,"durationMs":1,"ip":"127.0.0.1","userId":null,"contentLength":"49"}
+[2026-07-12 02:28:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/stats","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"516"}
+[2026-07-12 02:28:36] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/daily-summary","statusCode":200,"durationMs":19,"ip":"127.0.0.1","userId":"3","contentLength":"213"}
+[2026-07-12 02:28:36] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/expenses?currentPeriodOnly=true","statusCode":200,"durationMs":44,"ip":"127.0.0.1","userId":"3","contentLength":"84"}
+[2026-07-12 02:28:36] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":43,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:28:36] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/paid-transactions","statusCode":200,"durationMs":46,"ip":"127.0.0.1","userId":"3","contentLength":"1173"}
+[2026-07-12 02:28:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/x-report","statusCode":200,"durationMs":12,"ip":"127.0.0.1","userId":"3","contentLength":"313"}
+[2026-07-12 02:28:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/menu/categories","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"3971"}
+[2026-07-12 02:28:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/admin/menu/products?search=","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"54271"}
+[2026-07-12 02:28:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:28:54] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:28:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:29:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:29:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:29:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:29:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:29:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:29:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:29:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:30:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:31:58] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:31:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:31:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:31:59] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/payment-session/start","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:32:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:32:11] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:32:19] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:32:27] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:32:35] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:32:43] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:32:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:32:59] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:33:07] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:33:15] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:33:23] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:33:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:33:36] INFO Socket disconnected: 1kLHTPboyGFBhiVcAAAD {"service":"adisyon-backend"}
+[2026-07-12 02:34:47] INFO Socket connected: wG2Clk-YMNH1E4GnAAAF {"service":"adisyon-backend"}
+[2026-07-12 02:34:53] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/login/pin","statusCode":200,"durationMs":9,"ip":"127.0.0.1","userId":null,"contentLength":"308"}
+[2026-07-12 02:34:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:34:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:34:54] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:34:54] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":7,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:34:56] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/payment-session/start","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 02:35:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:35:04] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":10,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:35:04] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":19,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:35:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:35:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:35:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:35:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 02:35:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 02:35:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":11,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 02:35:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:35:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:35:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:35:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:36:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:36:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:36:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:36:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:36:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:36:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:36:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:37:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:38:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:38:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:38:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:38:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:38:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:38:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:38:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:39:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:40:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:40:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:40:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:40:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:40:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:40:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:40:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:41:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:42:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:42:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:42:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:42:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:42:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:42:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:42:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:43:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:44:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:44:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:44:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:44:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:44:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:44:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:44:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:45:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:46:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:46:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:46:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:46:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:46:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:46:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:46:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:47:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:48:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:48:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:48:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:48:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:48:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:48:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"108"}
+[2026-07-12 02:48:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:49:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:50:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:50:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:50:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:50:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:50:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:50:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:50:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:51:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:52:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:52:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:52:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:52:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:52:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:52:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:52:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:53:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:54:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:54:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:54:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:54:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:54:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:54:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:54:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:55:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:56:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:56:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:56:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:56:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:56:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:56:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:56:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:33] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:41] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:49] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:57:57] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:58:05] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:58:13] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:58:21] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:58:29] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:58:37] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:58:45] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:58:53] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:59:01] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:59:09] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:59:17] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:59:25] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"109"}
+[2026-07-12 02:59:31] INFO Socket disconnected: wG2Clk-YMNH1E4GnAAAF {"service":"adisyon-backend"}
+[2026-07-12 03:01:24] INFO Socket connected: lHg7nckwChlUEqX0AAAH {"service":"adisyon-backend"}
+[2026-07-12 03:01:31] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/login/pin","statusCode":200,"durationMs":24,"ip":"127.0.0.1","userId":null,"contentLength":"308"}
+[2026-07-12 03:01:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":11,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-12 03:01:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":11,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-12 03:01:32] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-12 03:01:32] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"467"}
+[2026-07-12 03:01:33] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/payment-session/start","statusCode":200,"durationMs":18,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-12 03:01:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-12 03:01:47] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-12 03:01:51] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/amount-payment","statusCode":200,"durationMs":12,"ip":"127.0.0.1","userId":"3","contentLength":"101"}
+[2026-07-12 03:01:51] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/amount-payment","statusCode":200,"durationMs":13,"ip":"127.0.0.1","userId":"3","contentLength":"120"}
+[2026-07-12 03:01:51] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/105/payment-session/end","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-12 03:01:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"21"}
+[2026-07-12 03:01:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 03:01:51] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"9216"}
+[2026-07-12 03:01:55] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":401,"durationMs":1,"ip":"127.0.0.1","userId":null,"contentLength":"45"}
+[2026-07-12 03:01:55] INFO Socket disconnected: lHg7nckwChlUEqX0AAAH {"service":"adisyon-backend"}
+[2026-07-12 03:02:01] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #105\n\n2x Adaçayı\n\nARA TOPLAM: 0.00 TL\nISKONTO: 0.00 TL\nKDV: 0.00 TL\nTOPLAM: 0.00 TL\nODEME: CARD"}
