@@ -518,3 +518,8 @@
 [2026-08-08 23:15:31] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":401,"durationMs":1,"ip":"127.0.0.1","userId":null,"contentLength":"45"}
 [2026-08-08 23:15:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":401,"durationMs":2,"ip":"127.0.0.1","userId":null,"contentLength":"45"}
 [2026-08-08 23:15:47] INFO Socket disconnected: AaQrVaV57RQC06I-AAAB {"service":"adisyon-backend"}
+[2026-08-08 23:43:18] INFO Backend listening on http://0.0.0.0:3002 (Yerel ağda erişilebilir) {"service":"adisyon-backend"}
+[2026-08-08 23:43:18] INFO Sunucu: 08.08.2026 23:43:18 {"service":"adisyon-backend"}
+[2026-08-08 23:43:18] INFO PostgreSQL connection established. database=adisyon_db {"service":"adisyon-backend"}
+[2026-08-08 23:43:18] INFO menu-migration: completed {"service":"adisyon-backend"}
+[2026-08-08 23:43:18] INFO Database schemas ensured on startup. {"service":"adisyon-backend"}
