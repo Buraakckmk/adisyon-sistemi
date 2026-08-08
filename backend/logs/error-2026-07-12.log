@@ -52,3 +52,27 @@
     at Socket._onTimeout (node:net:604:8)
     at listOnTimeout (node:internal/timers:588:17)
     at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #105\n\n2x Adaçayı\n\nARA TOPLAM: 0.00 TL\nISKONTO: 0.00 TL\nKDV: 0.00 TL\nTOPLAM: 0.00 TL\nODEME: CARD"}
+[2026-07-12 18:29:04] ERROR Error: connect EHOSTUNREACH 192.168.1.30:9100
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #106\n\n1x Adaçayı"}
+[2026-07-12 18:29:19] ERROR Error: connect EHOSTUNREACH 192.168.1.111:6001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #106\n\n1x Adaçayı\n\nARA TOPLAM: 0.00 TL\nISKONTO: 0.00 TL\nKDV: 0.00 TL\nTOPLAM: 0.00 TL\nODEME: CASH"}
+[2026-07-12 18:29:30] ERROR Error: connect EHOSTUNREACH 192.168.1.30:9100
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #107\n\n3x Adaçayı"}
+[2026-07-12 18:30:00] ERROR Error: connect EHOSTUNREACH 192.168.1.111:6001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #107\n\n1x Adaçayı\n\nARA TOPLAM: 160.00 TL\nISKONTO: 0.00 TL\nKDV: 14.55 TL\nTOPLAM: 160.00 TL\nODEME: CASH"}
+[2026-07-12 18:30:13] ERROR Error: connect EHOSTUNREACH 192.168.1.111:6001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #107\n\n1x Adaçayı\n\nARA TOPLAM: 160.00 TL\nISKONTO: 0.00 TL\nKDV: 14.55 TL\nTOPLAM: 160.00 TL\nODEME: CARD"}
+[2026-07-12 18:30:19] ERROR Error: connect EHOSTUNREACH 192.168.1.111:6001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #107\n\n3x Adaçayı\n\nARA TOPLAM: 0.00 TL\nISKONTO: 0.00 TL\nKDV: 0.00 TL\nTOPLAM: 0.00 TL\nODEME: CASH"}
+[2026-07-12 18:30:25] ERROR Error: connect EHOSTUNREACH 192.168.1.30:9100
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #108\n\n7x Adaçayı"}
+[2026-07-12 18:30:39] ERROR Error: connect EHOSTUNREACH 192.168.1.111:6001
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16) {"service":"adisyon-backend","ticketType":"CUSTOMER_RECEIPT","payloadPreview":"MASA: BALKON 1\nSIPARIS: #108\n\n4x Adaçayı\n\nARA TOPLAM: 640.00 TL\nISKONTO: 0.00 TL\nKDV: 58.18 TL\nTOPLAM: 640.00 TL\nODEME: CASH"}
+[2026-07-12 19:30:56] ERROR error: column "meal_card_type" of relation "payments" does not exist
+    at C:\Projects\adisyon sistemi\backend\node_modules\pg\lib\client.js:631:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async amountPayment (C:\Projects\adisyon sistemi\backend\src\controllers\order.controller.js:1394:7) {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/amount-payment","statusCode":500}
+[2026-07-12 19:37:10] ERROR error: column "meal_card_type" of relation "payments" does not exist
+    at C:\Projects\adisyon sistemi\backend\node_modules\pg\lib\client.js:631:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async amountPayment (C:\Projects\adisyon sistemi\backend\src\controllers\order.controller.js:1402:7) {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/amount-payment","statusCode":500}

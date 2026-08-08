@@ -45,8 +45,13 @@ class TableOrderPreviewItem {
 class CollectedPayment {
   final String paymentMethod;
   final double amount;
+  final String? mealCardType;
 
-  const CollectedPayment({required this.paymentMethod, required this.amount});
+  const CollectedPayment({
+    required this.paymentMethod,
+    required this.amount,
+    this.mealCardType,
+  });
 }
 
 class CheckoutDialogResult {

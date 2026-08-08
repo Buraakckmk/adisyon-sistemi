@@ -202,6 +202,81 @@ class _AdvancedPaymentDialogState extends State<AdvancedPaymentDialog> {
     );
   }
 
+  Future<void> _showMealCardPicker() async {
+    const mealCards = [
+      "Eden Red",
+      "Multinet",
+      "Tokenflex",
+      "Sodexo",
+      "Setcard",
+      "Metropol",
+      "Paycell",
+    ];
+    final selected = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text("Yemek Kartı Seç"),
+        content: SingleChildScrollView(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: mealCards
+                .map(
+                  (card) => ListTile(
+                    title: Text(card),
+                    onTap: () => Navigator.pop(ctx, card),
+                  ),
+                )
+                .toList(),
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text("Vazgeç"),
+          ),
+        ],
+      ),
+    );
+
+    if (selected != null && mounted) {
+      final amount =
+          double.tryParse(
+            paymentAmountController.text.trim().replaceAll(",", "."),
+          ) ??
+          0;
+      if (amount <= 0) {
+        setState(() {
+          validationMessage = "Geçerli bir tutar girin.";
+        });
+        return;
+      }
+      if (amount >
+          (widget.totalAmount - widget.initialCollectedAmount) + 0.009) {
+        setState(() {
+          validationMessage = "Tutar kalandan büyük olamaz.";
+        });
+        return;
+      }
+      setState(() {
+        alinanOdemeler.add(
+          CollectedPayment(
+            paymentMethod: "MEAL_CARD",
+            amount: roundMoney(amount),
+            mealCardType: selected,
+          ),
+        );
+        for (var si in selectedItemsForPayment) {
+          paidQuantities[si.productId] =
+              (paidQuantities[si.productId] ?? 0) + si.quantity;
+          allPaidItemsInThisSession.add(si);
+        }
+        selectedItemsForPayment.clear();
+        _updateAmountFromSelection();
+        validationMessage = null;
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final rawInput =
@@ -528,6 +603,8 @@ class _AdvancedPaymentDialogState extends State<AdvancedPaymentDialog> {
                               leading: Icon(
                                 payment.paymentMethod == 'CASH'
                                     ? Icons.payments_rounded
+                                    : payment.paymentMethod == 'MEAL_CARD'
+                                    ? Icons.restaurant_menu_rounded
                                     : Icons.credit_card_rounded,
                                 size: 18,
                                 color: const Color(0xFF10B981),
@@ -535,6 +612,8 @@ class _AdvancedPaymentDialogState extends State<AdvancedPaymentDialog> {
                               title: Text(
                                 payment.paymentMethod == 'CASH'
                                     ? 'Nakit Ödeme'
+                                    : payment.paymentMethod == 'MEAL_CARD'
+                                    ? payment.mealCardType ?? "Yemek Kartı"
                                     : 'Kredi Kartı',
                                 style: const TextStyle(
                                   color: Color(0xFF0F172A),
@@ -814,9 +893,12 @@ class _AdvancedPaymentDialogState extends State<AdvancedPaymentDialog> {
                               ),
                             ),
                             const SizedBox(height: 16),
-                            Row(
+                            Wrap(
+                              spacing: 12,
+                              runSpacing: 12,
                               children: [
-                                Expanded(
+                                SizedBox(
+                                  width: 140,
                                   child: _buildDialogPaymentOption(
                                     label: "💵 NAKİT AL",
                                     selected: false,
@@ -865,8 +947,8 @@ class _AdvancedPaymentDialogState extends State<AdvancedPaymentDialog> {
                                     },
                                   ),
                                 ),
-                                const SizedBox(width: 12),
-                                Expanded(
+                                SizedBox(
+                                  width: 140,
                                   child: _buildDialogPaymentOption(
                                     label: "💳 KART AL",
                                     selected: false,
@@ -913,6 +995,14 @@ class _AdvancedPaymentDialogState extends State<AdvancedPaymentDialog> {
                                         validationMessage = null;
                                       });
                                     },
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 140,
+                                  child: _buildDialogPaymentOption(
+                                    label: "🍽️ YEMEK KARTI",
+                                    selected: false,
+                                    onTap: _showMealCardPicker,
                                   ),
                                 ),
                               ],

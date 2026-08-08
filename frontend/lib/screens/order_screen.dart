@@ -1007,7 +1007,13 @@ class _ReceiptPanel extends StatelessWidget {
             .toList();
 
         final paymentsList = checkout.payments
-            .map((p) => {"paymentMethod": p.paymentMethod, "amount": p.amount})
+            .map(
+              (p) => {
+                "paymentMethod": p.paymentMethod,
+                "amount": p.amount,
+                "mealCardType": p.mealCardType,
+              },
+            )
             .toList();
 
         await ApiClient.dio.post(
@@ -1026,6 +1032,7 @@ class _ReceiptPanel extends StatelessWidget {
             data: {
               "amount": 0,
               "paymentMethod": "CASH",
+              "mealCardType": null,
               "discountAmount": checkout.discountAmount,
               "finalTotal": checkout.netAmount,
             },
@@ -1039,6 +1046,7 @@ class _ReceiptPanel extends StatelessWidget {
               data: {
                 "amount": payment.amount,
                 "paymentMethod": payment.paymentMethod,
+                "mealCardType": payment.mealCardType,
                 "discountAmount": i == 0 ? checkout.discountAmount : 0,
                 "finalTotal": checkout.netAmount,
               },

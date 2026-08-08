@@ -541,6 +541,7 @@ function buildCashReceiptText({
   vatAmount,
   grandTotal,
   paymentMethod,
+  mealCardType,
 }) {
   const lines = [
     `MASA: ${String(tableDisplayName ?? "-").toUpperCase()}`,
@@ -555,13 +556,17 @@ function buildCashReceiptText({
     lines.push(`${qty}x ${name}`);
   }
 
+  const paymentLine = mealCardType
+    ? `ODEME: ${String(paymentMethod || "-").toUpperCase()} - ${mealCardType.toUpperCase()}`
+    : `ODEME: ${String(paymentMethod || "-").toUpperCase()}`;
+
   lines.push(
     "",
     `ARA TOPLAM: ${formatMoney(subtotal)}`,
     `ISKONTO: ${formatMoney(discountAmount || 0)}`,
     `KDV: ${formatMoney(vatAmount || 0)}`,
     `TOPLAM: ${formatMoney(grandTotal)}`,
-    `ODEME: ${String(paymentMethod || "-").toUpperCase()}`
+    paymentLine
   );
 
   return lines.join("\n");

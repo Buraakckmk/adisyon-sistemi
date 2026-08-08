@@ -310,20 +310,22 @@ async function checkoutOrder(req, res, next) {
       return res.status(400).json({ message: "Gecersiz orderId." });
     }
 
-    if (!["CASH", "CARD"].includes(paymentMethod)) {
-      return res.status(400).json({ message: "paymentMethod CASH veya CARD olmalı." });
+    if (!["CASH", "CARD", "MEAL_CARD"].includes(paymentMethod)) {
+      return res.status(400).json({ message: "paymentMethod CASH, CARD veya MEAL_CARD olmalı." });
     }
 
     if (!Number.isFinite(discountAmount) || discountAmount < 0) {
       return res.status(400).json({ message: "discountAmount 0 veya pozitif olmalı." });
     }
 
+    const mealCardType = req.body?.mealCardType?.toString().trim() || null;
     const result = await orderService.checkoutOrder({
       orderId,
       userId: req.user.user_id,
       roleId: req.user.role_id,
       paymentMethod,
       discountAmount,
+      mealCardType,
     });
 
     emitTablesRefresh(req);
@@ -441,6 +443,7 @@ async function partialCheckout(req, res, next) {
     const { items, payments } = req.body;
     const paymentMethod = (req.body?.paymentMethod ?? "").toString().toUpperCase();
     const discountAmount = Number(req.body?.discountAmount ?? 0);
+    const fallbackMealCardType = req.body?.mealCardType?.toString().trim() || null;
     if (!Number.isFinite(orderId) || !Array.isArray(items) || items.length === 0) {
       return res.status(400).json({ message: "Gecersiz istek." });
     }
@@ -449,8 +452,8 @@ async function partialCheckout(req, res, next) {
       return res.status(400).json({ message: "payments bir dizi olmalı." });
     }
 
-    if (!payments && !["CASH", "CARD"].includes(paymentMethod)) {
-      return res.status(400).json({ message: "paymentMethod CASH veya CARD olmalı." });
+    if (!payments && !["CASH", "CARD", "MEAL_CARD"].includes(paymentMethod)) {
+      return res.status(400).json({ message: "paymentMethod CASH, CARD veya MEAL_CARD olmalı." });
     }
 
     if (!Number.isFinite(discountAmount) || discountAmount < 0) {
@@ -625,6 +628,7 @@ async function partialCheckout(req, res, next) {
           const p = payments[i];
           const pAmount = Number(p.amount);
           const pMethod = (p.paymentMethod || "CASH").toUpperCase();
+          const pMealCardType = p.mealCardType ? String(p.mealCardType).trim() : null;
           const pDiscount = i === 0 ? appliedDiscount : 0; // İndirimi ilk ödemeye ekle
 
           await client.query(
@@ -636,11 +640,12 @@ async function partialCheckout(req, res, next) {
                 amount,
                 discount_amount,
                 currency,
+                meal_card_type,
                 payment_note
               )
-              VALUES ($1, $2, $3, $4, $5, 'TRY', 'Kısmi ödeme')
+              VALUES ($1, $2, $3, $4, $5, 'TRY', $6, 'Kısmi ödeme')
             `,
-            [orderId, req.user.user_id, pMethod, pAmount, pDiscount]
+            [orderId, req.user.user_id, pMethod, pAmount, pDiscount, pMealCardType]
           );
         }
       } else {
@@ -653,11 +658,12 @@ async function partialCheckout(req, res, next) {
               amount,
               discount_amount,
               currency,
+              meal_card_type,
               payment_note
             )
-            VALUES ($1, $2, $3, $4, $5, 'TRY', 'Kısmi ödeme')
+            VALUES ($1, $2, $3, $4, $5, 'TRY', $6, 'Kısmi ödeme')
           `,
-          [orderId, req.user.user_id, paymentMethod, netPaidAmount, appliedDiscount]
+          [orderId, req.user.user_id, paymentMethod, netPaidAmount, appliedDiscount, fallbackMealCardType]
         );
       }
 
@@ -681,6 +687,11 @@ async function partialCheckout(req, res, next) {
             ? (payments.length > 1 ? "MIXED" : payments[0].paymentMethod)
             : paymentMethod;
 
+          // İlk ödemenin meal card type'ını al (eğer varsa)
+          const mainMealCardType = (payments && payments.length > 0)
+            ? (payments[0].mealCardType || null)
+            : fallbackMealCardType;
+
           // Arka planda yazdır, ana işlemi bloklama
           orderService.printFinalReceipt({
             orderId,
@@ -690,6 +701,7 @@ async function partialCheckout(req, res, next) {
             discountAmount: appliedDiscount,
             grandTotal: netPaidAmount,
             paymentMethod: mainPaymentMethod,
+            mealCardType: mainMealCardType,
           }).catch(printErr => console.error("Kısmi ödeme fiş yazdırma hatası:", printErr));
         }
       } catch (printErr) {
@@ -1271,8 +1283,8 @@ async function amountPayment(req, res, next) {
       return res.status(400).json({ message: "finalTotal gecersiz." });
     }
 
-    if (!["CASH", "CARD"].includes(paymentMethod)) {
-      return res.status(400).json({ message: "paymentMethod CASH veya CARD olmalı." });
+    if (!["CASH", "CARD", "MEAL_CARD"].includes(paymentMethod)) {
+      return res.status(400).json({ message: "paymentMethod CASH, CARD veya MEAL_CARD olmalı." });
     }
 
     await orderService.startPaymentSession({
@@ -1379,6 +1391,7 @@ async function amountPayment(req, res, next) {
       });
     }
 
+    const mealCardType = req.body?.mealCardType?.toString().trim() || null;
     const netAmount = Number(amount.toFixed(2));
     let tableClosed = false;
 
@@ -1394,11 +1407,12 @@ async function amountPayment(req, res, next) {
             payment_method,
             amount,
             currency,
+            meal_card_type,
             payment_note
           )
-          VALUES ($1, $2, $3, $4, 'TRY', 'Tutar girerek odeme')
+          VALUES ($1, $2, $3, $4, 'TRY', $5, 'Tutar girerek odeme')
         `,
-        [orderId, req.user.user_id, paymentMethod, netAmount]
+        [orderId, req.user.user_id, paymentMethod, netAmount, mealCardType]
       );
     }
 
@@ -1458,6 +1472,7 @@ async function amountPayment(req, res, next) {
             discountAmount: Number(orderData[0].discount_total),
             grandTotal: Number(orderData[0].grand_total),
             paymentMethod,
+            mealCardType,
           }).catch((printErr) => {
             console.error("Otomatik fiş yazdırma hatası (amountPayment):", printErr);
           });

@@ -272,10 +272,11 @@ async function createSchema(client) {
       order_id BIGINT NOT NULL REFERENCES orders(id) ON DELETE RESTRICT,
       received_by_user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
       payment_method VARCHAR(20) NOT NULL
-        CHECK (payment_method IN ('CASH', 'CARD', 'MIXED', 'OTHER')),
+        CHECK (payment_method IN ('CASH', 'CARD', 'MEAL_CARD', 'MIXED', 'OTHER')),
       amount NUMERIC(12, 2) NOT NULL CHECK (amount > 0),
       discount_amount NUMERIC(12, 2) NOT NULL DEFAULT 0 CHECK (discount_amount >= 0),
       currency VARCHAR(3) NOT NULL DEFAULT 'TRY',
+      meal_card_type VARCHAR(100),
       payment_note TEXT,
       paid_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
       created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -291,6 +292,11 @@ async function createSchema(client) {
   await client.query(`
     ALTER TABLE payments
     ADD COLUMN IF NOT EXISTS discount_amount NUMERIC(12, 2) NOT NULL DEFAULT 0 CHECK (discount_amount >= 0);
+  `);
+
+  await client.query(`
+    ALTER TABLE payments
+    ADD COLUMN IF NOT EXISTS meal_card_type VARCHAR(100);
   `);
 
   await client.query(`

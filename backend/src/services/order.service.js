@@ -1162,6 +1162,7 @@ async function checkoutOrder({
   roleId,
   paymentMethod,
   discountAmount,
+  mealCardType,
 }) {
   const client = await db.pool.connect();
   try {
@@ -1232,6 +1233,7 @@ async function checkoutOrder({
       discountAmount: discount,
       grandTotal,
       paymentMethod,
+      mealCardType,
     }).catch((err) => console.error("Arka plan fiş yazdırma hatası:", err));
 
     await client.query(
@@ -1243,11 +1245,12 @@ async function checkoutOrder({
           amount,
           discount_amount,
           currency,
+          meal_card_type,
           payment_note
         )
-        VALUES ($1, $2, $3, $4, $5, 'TRY', 'Tam ödeme')
+        VALUES ($1, $2, $3, $4, $5, 'TRY', $6, 'Tam ödeme')
       `,
-      [orderId, userId, paymentMethod, grandTotal, discount]
+      [orderId, userId, paymentMethod, grandTotal, discount, mealCardType]
     );
 
     await client.query(
@@ -1347,6 +1350,7 @@ async function printFinalReceipt({
   discountAmount,
   grandTotal,
   paymentMethod,
+  mealCardType,
 }) {
   try {
     const vatAmount = Math.max(grandTotal - grandTotal / 1.1, 0);
@@ -1359,6 +1363,7 @@ async function printFinalReceipt({
       vatAmount,
       grandTotal,
       paymentMethod,
+      mealCardType,
     });
   } catch (err) {
     console.error("Fiş yazdırma hatası:", err);

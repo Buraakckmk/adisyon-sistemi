@@ -1,0 +1,59 @@
+[2026-07-14 20:05:36] INFO Backend listening on http://0.0.0.0:3002 (Yerel ağda erişilebilir) {"service":"adisyon-backend"}
+[2026-07-14 20:05:36] INFO Sunucu: 14.07.2026 20:05:36 {"service":"adisyon-backend"}
+[2026-07-14 20:05:36] INFO PostgreSQL connection established. database=adisyon_db {"service":"adisyon-backend"}
+[2026-07-14 20:05:37] INFO menu-migration: completed {"service":"adisyon-backend"}
+[2026-07-14 20:05:37] INFO Database schemas ensured on startup. {"service":"adisyon-backend"}
+[2026-07-14 20:06:24] INFO Socket connected: QxjtQx7BJrrGN4hhAAAB {"service":"adisyon-backend"}
+[2026-07-14 20:06:44] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/auth/login/pin","statusCode":200,"durationMs":68,"ip":"127.0.0.1","userId":null,"contentLength":"308"}
+[2026-07-14 20:06:44] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":47,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-14 20:06:44] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":44,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:06:46] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":16,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-14 20:06:46] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":16,"ip":"127.0.0.1","userId":"3","contentLength":"469"}
+[2026-07-14 20:06:47] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/payment-session/start","statusCode":200,"durationMs":13,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-14 20:06:52] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":11,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:06:55] ERROR error: column "meal_card_type" of relation "payments" does not exist
+    at C:\Projects\adisyon sistemi\backend\node_modules\pg\lib\client.js:631:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async amountPayment (C:\Projects\adisyon sistemi\backend\src\controllers\order.controller.js:1402:7) {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/amount-payment","statusCode":500}
+[2026-07-14 20:06:55] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/amount-payment","statusCode":500,"durationMs":62,"ip":"127.0.0.1","userId":"3","contentLength":"76"}
+[2026-07-14 20:06:55] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/payment-session/end","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-14 20:07:00] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/tables/122/print-current-account","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"57"}
+[2026-07-14 20:07:00] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:07:03] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"9242"}
+[2026-07-14 20:07:08] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:07:10] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"CURRENT_ACCOUNT","payloadPreview":"MASA: B-1\nSIPARIS: #108\n\n3x Adaçayı\n\nARA TOPLAM: 480.00 TL\nKALAN HESAP: 480.00 TL"}
+[2026-07-14 20:07:16] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:07:24] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:07:32] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:07:40] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:07:48] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:07:56] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:08:04] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:08:06] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/products","statusCode":200,"durationMs":9,"ip":"127.0.0.1","userId":"3","contentLength":"55955"}
+[2026-07-14 20:08:06] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":12,"ip":"127.0.0.1","userId":"3","contentLength":"469"}
+[2026-07-14 20:08:12] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":6,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:08:20] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:08:28] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:08:36] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:08:39] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders","statusCode":201,"durationMs":50,"ip":"127.0.0.1","userId":"3","contentLength":"306"}
+[2026-07-14 20:08:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"587"}
+[2026-07-14 20:08:39] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/confirm","statusCode":200,"durationMs":21,"ip":"127.0.0.1","userId":"3","contentLength":"264"}
+[2026-07-14 20:08:39] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/waiter/tables/122/active-order","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"587"}
+[2026-07-14 20:08:42] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/payment-session/start","statusCode":200,"durationMs":2,"ip":"127.0.0.1","userId":"3","contentLength":"54"}
+[2026-07-14 20:08:44] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":5,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:08:49] ERROR Error: Socket timeout
+    at Socket.<anonymous> (C:\Projects\adisyon sistemi\backend\node_modules\node-thermal-printer\lib\interfaces\network.js:76:16)
+    at Socket.emit (node:events:518:28)
+    at Socket._onTimeout (node:net:604:8)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7) {"service":"adisyon-backend","ticketType":"ORDER_CONFIRMATION","payloadPreview":"MASA: BALKON 1\nGARSON: ADMIN KULLANICI\nSIPARIS: #108\n\n12x Americano"}
+[2026-07-14 20:08:52] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":3,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:09:00] INFO api-request {"service":"adisyon-backend","method":"GET","path":"/api/stats/daily-summary","statusCode":200,"durationMs":8,"ip":"127.0.0.1","userId":"3","contentLength":"105"}
+[2026-07-14 20:09:02] INFO api-request {"service":"adisyon-backend","method":"POST","path":"/api/waiter/orders/108/payment-session/end","statusCode":200,"durationMs":4,"ip":"127.0.0.1","userId":"3","contentLength":"53"}
+[2026-07-14 20:09:05] INFO Socket disconnected: QxjtQx7BJrrGN4hhAAAB {"service":"adisyon-backend"}
+[2026-07-14 20:09:16] INFO SIGINT received, shutting down gracefully... {"service":"adisyon-backend"}
