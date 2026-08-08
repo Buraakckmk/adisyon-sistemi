@@ -162,7 +162,7 @@ async function createSchema(client) {
       opened_by_user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE RESTRICT,
       closed_by_user_id BIGINT REFERENCES users(id) ON DELETE RESTRICT,
       payment_method VARCHAR(20)
-        CHECK (payment_method IN ('CASH', 'CARD', 'MIXED', 'OTHER')),
+        CHECK (payment_method IN ('CASH', 'CARD', 'MEAL_CARD', 'MIXED', 'OTHER')),
       order_status VARCHAR(20) NOT NULL DEFAULT 'OPEN'
         CHECK (order_status IN ('OPEN', 'CONFIRMED', 'PAID', 'CANCELLED')),
       note TEXT,
@@ -182,7 +182,19 @@ async function createSchema(client) {
   await client.query(`
     ALTER TABLE orders
     ADD COLUMN IF NOT EXISTS payment_method VARCHAR(20)
-      CHECK (payment_method IN ('CASH', 'CARD', 'MIXED', 'OTHER'));
+      CHECK (payment_method IN ('CASH', 'CARD', 'MEAL_CARD', 'MIXED', 'OTHER'));
+  `);
+
+  // Existing installations may still have the older constraint without MEAL_CARD.
+  await client.query(`
+    ALTER TABLE orders
+    DROP CONSTRAINT IF EXISTS orders_payment_method_check;
+  `);
+
+  await client.query(`
+    ALTER TABLE orders
+    ADD CONSTRAINT orders_payment_method_check
+    CHECK (payment_method IN ('CASH', 'CARD', 'MEAL_CARD', 'MIXED', 'OTHER'));
   `);
 
   await client.query(`
@@ -297,6 +309,18 @@ async function createSchema(client) {
   await client.query(`
     ALTER TABLE payments
     ADD COLUMN IF NOT EXISTS meal_card_type VARCHAR(100);
+  `);
+
+  // Keep databases created before meal-card support compatible with all methods.
+  await client.query(`
+    ALTER TABLE payments
+    DROP CONSTRAINT IF EXISTS payments_payment_method_check;
+  `);
+
+  await client.query(`
+    ALTER TABLE payments
+    ADD CONSTRAINT payments_payment_method_check
+    CHECK (payment_method IN ('CASH', 'CARD', 'MEAL_CARD', 'MIXED', 'OTHER'));
   `);
 
   await client.query(`

@@ -934,7 +934,11 @@ class _PosOrderViewState extends State<_PosOrderView> {
                   flex: 30,
                   child: Text(
                     "Ürün Adı",
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
+                    style: TextStyle(
+                      color: Color(0xFF111827),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
+                    ),
                   ),
                 ),
                 Expanded(
@@ -942,7 +946,11 @@ class _PosOrderViewState extends State<_PosOrderView> {
                   child: Text(
                     "Birim",
                     textAlign: TextAlign.right,
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
+                    style: TextStyle(
+                      color: Color(0xFF111827),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
+                    ),
                   ),
                 ),
                 Expanded(
@@ -950,7 +958,11 @@ class _PosOrderViewState extends State<_PosOrderView> {
                   child: Text(
                     "Adet",
                     textAlign: TextAlign.right,
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
+                    style: TextStyle(
+                      color: Color(0xFF111827),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
+                    ),
                   ),
                 ),
                 Expanded(
@@ -958,7 +970,11 @@ class _PosOrderViewState extends State<_PosOrderView> {
                   child: Text(
                     "Kdv",
                     textAlign: TextAlign.right,
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
+                    style: TextStyle(
+                      color: Color(0xFF111827),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
+                    ),
                   ),
                 ),
                 Expanded(
@@ -966,7 +982,11 @@ class _PosOrderViewState extends State<_PosOrderView> {
                   child: Text(
                     "Toplam",
                     textAlign: TextAlign.right,
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
+                    style: TextStyle(
+                      color: Color(0xFF111827),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
+                    ),
                   ),
                 ),
                 Expanded(
@@ -974,7 +994,11 @@ class _PosOrderViewState extends State<_PosOrderView> {
                   child: Text(
                     "Not",
                     textAlign: TextAlign.right,
-                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 12),
+                    style: TextStyle(
+                      color: Color(0xFF111827),
+                      fontWeight: FontWeight.w700,
+                      fontSize: 12,
+                    ),
                   ),
                 ),
               ],
@@ -1033,6 +1057,7 @@ class _PosOrderViewState extends State<_PosOrderView> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: const TextStyle(
+                                    color: Color(0xFF111827),
                                     fontWeight: FontWeight.w700,
                                     fontSize: 12,
                                   ),
@@ -1043,7 +1068,10 @@ class _PosOrderViewState extends State<_PosOrderView> {
                                 child: Text(
                                   line.unitPrice.toStringAsFixed(2),
                                   textAlign: TextAlign.right,
-                                  style: const TextStyle(fontSize: 12),
+                                  style: const TextStyle(
+                                    color: Color(0xFF111827),
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ),
                               Expanded(
@@ -1051,7 +1079,10 @@ class _PosOrderViewState extends State<_PosOrderView> {
                                 child: Text(
                                   line.quantity.toStringAsFixed(1),
                                   textAlign: TextAlign.right,
-                                  style: const TextStyle(fontSize: 12),
+                                  style: const TextStyle(
+                                    color: Color(0xFF111827),
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ),
                               Expanded(
@@ -1059,7 +1090,10 @@ class _PosOrderViewState extends State<_PosOrderView> {
                                 child: Text(
                                   "%${line.product.vatRate.toStringAsFixed(line.product.vatRate % 1 == 0 ? 0 : 1)}",
                                   textAlign: TextAlign.right,
-                                  style: const TextStyle(fontSize: 12),
+                                  style: const TextStyle(
+                                    color: Color(0xFF111827),
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ),
                               Expanded(
@@ -1068,6 +1102,7 @@ class _PosOrderViewState extends State<_PosOrderView> {
                                   line.lineTotal.toStringAsFixed(2),
                                   textAlign: TextAlign.right,
                                   style: const TextStyle(
+                                    color: Color(0xFF111827),
                                     fontSize: 12,
                                     fontWeight: FontWeight.w800,
                                   ),
@@ -1082,7 +1117,7 @@ class _PosOrderViewState extends State<_PosOrderView> {
                                   textAlign: TextAlign.right,
                                   style: const TextStyle(
                                     fontSize: 12,
-                                    color: Color(0xFF64748B),
+                                    color: Color(0xFF374151),
                                   ),
                                 ),
                               ),

@@ -6,11 +6,6 @@
     "auditLog": "C:\\Projects\\adisyon sistemi\\backend\\logs\\.68d8868046e1f18060a4dbc34c01c619f3b87d91-audit.json",
     "files": [
         {
-            "date": 1780916126302,
-            "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\error-2026-06-08.log",
-            "hash": "f2f51ec1f9c8097af15ef8de5ebdee5ec34a71e935d3b9950488d79181e7e5ce"
-        },
-        {
             "date": 1783811550163,
             "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\error-2026-07-12.log",
             "hash": "9fd3e643f8555803b746746bdbf32571abaac0c929180f074494b49d54d0f89c"
@@ -19,6 +14,16 @@
             "date": 1784048735981,
             "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\error-2026-07-14.log",
             "hash": "58edfd588ba82fdcc3c42e0bcec99b6305eeaf1bde540e729dfb629ec36f4236"
+        },
+        {
+            "date": 1784122555370,
+            "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\error-2026-07-15.log",
+            "hash": "6ca7b53dd7bbff0e2c687fffd1ff5943dcb74d57e7a2b27ca61c8ed7b2b72cad"
+        },
+        {
+            "date": 1786200839074,
+            "name": "C:\\Projects\\adisyon sistemi\\backend\\logs\\error-2026-08-08.log",
+            "hash": "00427ee210e459b6ef9dc46c1be26f3859ea02fc0efba90e9f6e54470e2f3779"
         }
     ],
     "hashType": "sha256"
